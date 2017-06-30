@@ -26,13 +26,49 @@
         </div>
 
         <div class="list-block search-here searchbar-found">
-            <ul>
-                <li class="item-content" ng-repeat="boutique in boutiques">
-                    <div class="item-inner">
-                        <div class="item-title">{{boutique.company_name}}</div>
+            <!-- Liste des enseignes -->
+            <div class="content-block-title">Enseignes</div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li ng-repeat="boutique in boutiques">
+                                <a href="pages/company.html" class="item-link item-content">
+                                    <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/4" width="44" /></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">{{boutique.company_name}}</div>
+                                        </div>
+                                        <div class="item-subtitle">Beatles</div>
+                                    </div>
+                                </a>
+                            </li>
+                            </a>
+                        </ul>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <!-- Liste des villes-->
+            <div class="content-block-title">Villes</div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li ng-repeat="boutique in boutiques">
+                                <a href="pages/list_company.html" class="item-link item-content">
+                                    <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/4" width="44" /></div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">{{boutique.company_name}}</div>
+                                        </div>
+                                        <div class="item-subtitle">Beatles</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
